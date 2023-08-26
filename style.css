@@ -18,7 +18,10 @@
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
     font-size: 25px;
+    background: hsla(212, 93%, 27%, 0.8);
+    border-top-right-radius: 20px;
 }
+
 
 #education {
     color: white;
@@ -29,6 +32,13 @@
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
     font-size: 25px;
+    background: inherit;
+    border-top-right-radius: 20px;
+    transition: background 1s ease;
+}
+
+#education:hover {
+    background: rgb(162, 210, 241);
 }
 
 
@@ -41,6 +51,13 @@
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
     font-size: 25px;
+    background: inherit;
+    border-top-right-radius: 20px;
+    transition: background 1s ease;
+}
+
+#projects:hover {
+    background: rgb(162, 210, 241);
 }
 
 .name {
@@ -83,7 +100,17 @@ h2 {
     overflow: auto;
     vertical-align: top;
 
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
 }
+
+.sec.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .ASG {
     background: hsl(212, 91%, 78%);
@@ -122,6 +149,7 @@ li {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 15px;
 }
 
 iframe {
@@ -142,11 +170,6 @@ iframe {
 body {
     padding: 0 2px;
     margin: 0;
-}
-
-#home {
-    background: hsla(212, 93%, 27%, 0.8);
-    border-top-right-radius: 20px;
 }
 
 footer {
@@ -298,4 +321,52 @@ footer a {
     padding-bottom: 5px;
     border-bottom: solid black 3px;
     margin-bottom: 40px;
+}
+
+.AboutMe ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.AboutMe ul li:nth-child(1) {
+    animation: fadeInUp 0.5s ease forwards 0.4s;
+}
+
+.AboutMe ul li:nth-child(2) {
+    animation: fadeInUp 0.5s ease forwards .8s;
+}
+
+.AboutMe ul li:nth-child(3) {
+    animation: fadeInUp 0.5s ease forwards 1.2s;
+}
+
+.AboutMe ul li:nth-child(4) {
+    animation: fadeInUp 0.5s ease forwards 1.6s;
+}
+
+.AboutMe ul li:nth-child(5) {
+    animation: fadeInUp 0.5s ease forwards 2s;
+}
+
+.AboutMe ul li:nth-child(6) {
+    animation: fadeInUp 0.5s ease forwards 2.4s;
+}
+
+.AboutMe ul li:nth-child(7) {
+    animation: fadeInUp 0.5s ease forwards 2.8s;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subtitle {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
 }
