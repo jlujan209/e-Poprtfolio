@@ -108,6 +108,7 @@ body a {
     position: relative;
     top: 100px;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 /* On mouse-over, add a deeper shadow */
