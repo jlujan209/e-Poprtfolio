@@ -94,7 +94,7 @@ body {
 
 .university-container {
     height: 400px;
-    display: inline-block;
+    display: flex;
     animation: fadeIn 2s ease forwards;
 }
 
@@ -143,16 +143,17 @@ body {
     height: 500px;
     background: rgb(6, 88, 143);
     border-bottom: dotted white 2px;
+    display: flex;
 }
 
 #ua-container {
-    position: relative;
-    top: -130px;
+    position: relative; 
     width: 50%;
     opacity: 0;
 }
 
 .university-container h2 {
+    display:flex;
     color: hsl(0, 0%, 100%);
     font-size: 40px;
     padding-left: 20px;
@@ -160,7 +161,7 @@ body {
 
 .ua-info {
     padding-left: 40px;
-    font-size: 25px;
+    font-size: 3vh;
     color: rgb(245, 245, 248);
 }
 
@@ -206,11 +207,12 @@ body {
 
 #ua-image {
     position: relative;
-    height: 400px;
+    height: 80%;
     top: 30px;
     left: 10px;
     border-radius: 2.5%;
     opacity: 0;
+    display: flex;
 }
 
 .highschool-container h2 {
